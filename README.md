@@ -3,4 +3,4 @@
   <p> Marketplace built on Ruby on Rails. </p>
   
   <h2>Authors</h2>
-Created by Eugenia and Sander while undertaking Le Wagon Bootcamp.
+Created by Sander Koreman and Eugenia Pastore while undertaking Le Wagon Bootcamp.
