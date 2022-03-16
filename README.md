@@ -8,4 +8,4 @@ Created by Sander Koreman and Eugenia Pastore while undertaking Le Wagon Bootcam
 <h2>Showcase</h2>
 <img src="https://ibb.co/h9vqsJf" alt="Doggy rental index page" width="500" height="600">
 
-![Alt text](https://ibb.co/h9vqsJf?raw=true "Title")
+![alt text](https://ibb.co/h9vqsJf)
