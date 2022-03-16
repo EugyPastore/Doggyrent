@@ -6,4 +6,4 @@
 Created by Sander Koreman and Eugenia Pastore while undertaking Le Wagon Bootcamp.
 
 <h2>Showcase</h2>
-<img src="doggyrental.png">
+<img src="/Users/eugeniapastore/Desktop/doggyrental.png">
