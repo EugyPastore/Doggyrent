@@ -5,3 +5,4 @@
   <h2>Authors</h2>
 Created by Sander Koreman and Eugenia Pastore while undertaking Le Wagon Bootcamp.
 
+![This is an image](https://i.ibb.co/qpcw6W0/doggyrentalonlaptop.png)
