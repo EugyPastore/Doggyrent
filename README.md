@@ -6,4 +6,4 @@
 Created by Sander Koreman and Eugenia Pastore while undertaking Le Wagon Bootcamp.
 
 <h2>Showcase</h2>
-<img src="//Users/eugeniapastore/Desktop/doggyrental.png" alt="Doggy rental index page" width="500" height="600">
+<img src="/Desktop/doggyrental.png" alt="Doggy rental index page" width="500" height="600">
