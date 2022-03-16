@@ -19,3 +19,6 @@ Created by Sander Koreman and Eugenia Pastore while undertaking Le Wagon Bootcam
 <h2>Showcase</h2>
 
 ![This is an image](https://i.ibb.co/qpcw6W0/doggyrentalonlaptop.png)
+
+![This is an image](https://i.ibb.co/qxSCQPZ/doggyrentalonlaptop2.png
+
