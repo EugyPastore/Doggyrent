@@ -1,10 +1,10 @@
 <h1>Doggy Rent app</h1>
 <h2>Description</h2>
   <h3>Want to take a dog for a walk? Your new fluffy friend is just a few clicks away!</h3>
-    <p>Owners can add their dog to the marketplace (photo, description, breed, address).</p>
-    <p>Dogs show page has a mapbox, photos carousel and form for reservations (personalised message, date, time).</p>
-    <p> Index page has a search tool that utilizes AJAX and Mapbox, which makes it easy for walkers to choose a right dog (can filter by breed). Ruby Geocoder Gem takes care of showing precise location of a dog on a map, as well as cute doggy marker on a Mapbox map in Javascript was added to make user journey more fun.</p>
-<p>Dashboard is for owners and walkers and it has has information on dogs that are owned by current user, as well as bookings made and requested bookings.</p>
+    <p>Owners list their dogs on this marketplace (provide photo, description, breed, address).</p>
+    <p>On dogs show page there is a mapbox, photos carousel and a form for making reservations (walkers can add personalised message, choose date&time).</p>
+    <p> Index page has a search tool (with filter option for breed) that utilizes AJAX, which makes it easy for walkers to choose the right dog. Ruby Geocoder Gem takes care of showing precise location of a dog on a map, as well as cute doggy marker on a Mapbox map in Javascript was added to make user journey more fun.</p>
+<p>Dashboard displays information on dogs that are owned by current user, as well as bookings made and requested bookings.</p>
 <p>After a reservation is made, the owner of a dog receives a booking request which might be approved or declined. The status of a booking is updated automatically.</p>
 
 
