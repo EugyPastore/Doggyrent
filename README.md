@@ -34,7 +34,7 @@ After a reservation is made, the owner of a dog receives a booking request which
   </ul>
   
   <h2>Authors</h2>
-Created by Sander Koreman and Eugenia Pastore while undertaking Le Wagon Bootcamp.
+Created by <a href ="https://github.com/SanderKoreman">Sander Koreman</a> and <a href ="https://github.com/EugyPastore">Eugenia Pastore</a> while undertaking Le Wagon Bootcamp.
 
 <h2>Showcase</h2>
 
