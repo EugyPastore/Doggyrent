@@ -3,17 +3,25 @@ class DogsController < ApplicationController
 
   def index
     if params[:query].present?
-      @dogs = Dog.where("breed ILIKE ?", "%#{params[:query]}%")
+      # raise
+      if Dog.where("breed ILIKE ?", "%#{params[:query]}%").present?
+        @dogs = Dog.where("breed ILIKE ?", "%#{params[:query]}%")
+      else
+        @dogs = []
+      end
     else
       @dogs = Dog.all
     end
-    @markers = @dogs.geocoded.map do |dog|
-      {
-        lat: dog.latitude,
-        lng: dog.longitude,
-        info_window: render_to_string(partial: "info_window", locals: { dog: dog }),
-        image_url: helpers.asset_url("dogface5.svg")
-      }
+
+    if !@dogs.empty?
+      @markers = @dogs.geocoded.map do |dog|
+        {
+          lat: dog.latitude,
+          lng: dog.longitude,
+          info_window: render_to_string(partial: "info_window", locals: { dog: dog }),
+          image_url: helpers.asset_url("dogface5.svg")
+        }
+      end
     end
   end
 

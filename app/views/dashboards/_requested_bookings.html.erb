@@ -26,12 +26,12 @@
             </div>
             <div>
               <% if booking.pending? %>
-                <%= link_to "Accept", accept_booking_path(booking), method: :patch, class: "me-2"%>
-                <%= link_to "Decline", decline_booking_path(booking), method: :patch %>
+                <%= link_to "Accept", accept_booking_path(booking), method: :patch, class: "btn-blue-mini d-block mb-2"%>
+                <%= link_to "Decline", decline_booking_path(booking), method: :patch, class: "btn-red-small"%>
               <% elsif booking.approved? %>
-                <%= link_to "Cancel confirmed booking", decline_booking_path(booking), method: :patch, class: "btn btn-dark" %>
+                <%= link_to "Cancel confirmed", decline_booking_path(booking), method: :patch, class: "btn btn-dark-small" %>
               <% elsif booking.declined? %>
-                <%= link_to "Archive", archive_booking_path(booking), method: :patch %>
+                <%= link_to "Archive", archive_booking_path(booking), method: :patch, class: "btn btn-blue-mini" %>
               <% end %>
             </div>
           </div>
