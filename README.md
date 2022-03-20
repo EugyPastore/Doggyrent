@@ -24,7 +24,7 @@ After a reservation is made, the owner of a dog receives a booking request which
     <li>4 pages: Home, Index, Dashboard, Contact us</li>
     <li>Forms: login, sign up, change info</li>
     <li>MVC Architecture</li>
-    <li>AJAX</li>
+    <li>AJAX, WEB Scraping, Flatpickr</li>
     <li>Search Bar</li>
     <li>UX/UI design</li>
     <li>Uniform colors and fonts</li>
