@@ -23,27 +23,33 @@
               <% end %>
         </div><!--col-7-->
       </div><!--card-top-->
-      <% @dogs.each do |dog| %>
-        <% if dog.user != current_user %>
-          <div class="card-dog" style="width: 100%;">
-              <% if dog.photos.attached? %>
-                <%= cl_image_tag dog.photos.first.key, height: 300, width: 400, crop: :fill, class: 'card-dog-img-top'%>
-              <% else %>
-                <img class="card-dog-img-top" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F05%2F18%2Fcockapoo-red-colored-greenery-223686877-2000.jpg" alt="Card image cap">
-              <% end %>
-              <div class="card-dog-body">
-                <div class="card-dog-header">
-                  <h5 class="card-dog-title"><%= link_to dog.name, dog_path(dog) %></h5>
-                  <h6 class="card-dog-breed badge-pink"><%= dog.breed.downcase %></h6>
+      <% if !@dogs.empty? %>
+        <% @dogs.each do |dog| %>
+          <% if dog.user != current_user %>
+            <div class="card-dog" style="width: 100%;">
+                <% if dog.photos.attached? %>
+                  <%= cl_image_tag dog.photos.first.key, height: 300, width: 400, crop: :fill, class: 'card-dog-img-top'%>
+                <% else %>
+                  <img class="card-dog-img-top" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F05%2F18%2Fcockapoo-red-colored-greenery-223686877-2000.jpg" alt="Card image cap">
+                <% end %>
+                <div class="card-dog-body">
+                  <div class="card-dog-header">
+                    <h5 class="card-dog-title"><%= link_to dog.name, dog_path(dog) %></h5>
+                    <h6 class="card-dog-breed badge-pink"><%= dog.breed.downcase %></h6>
+                  </div>
+                  <p class="owner-name"><em><%= dog.user.first_name %>'s dog</em></p>
+                  <p class="card-dog-text">
+                  <%= dog.description[0..200] %> <%= "..." if dog.description.size >= 200 %>
+                  </p>
+                  <%= link_to "MEET ME!", dog_path(dog), class: "btn-green"%>
                 </div>
-                <p class="owner-name"><em><%= dog.user.first_name %>'s dog</em></p>
-                <p class="card-dog-text">
-                <%= dog.description[0..200] %> <%= "..." if dog.description.size >= 200 %>
-                </p>
-                <%= link_to "MEET ME!", dog_path(dog), class: "btn-green"%>
               </div>
-            </div>
-          <%end %>
+            <% end %>
+          <% end %>
+        <% else %>
+        <div class="my-alert" role="alert">
+          No result found! Try again!
+        </div>
     <% end %>
   </div>
     <div class="col-md-5">
