@@ -26,7 +26,9 @@ class DogsController < ApplicationController
       lng: @dog.longitude,
       info_window: render_to_string(partial: "info_window", locals: { dog: @dog }),
       image_url: helpers.asset_url("dogface5.svg")
-      }]
+
+    }]
+
   end
 
   def new
@@ -59,7 +61,6 @@ class DogsController < ApplicationController
 
     redirect_to dog_path(@dog)
   end
-
 
   private
 

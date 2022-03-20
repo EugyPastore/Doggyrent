@@ -15,8 +15,10 @@ export default class extends Controller {
       style: "mapbox://styles/mapbox/streets-v10"
     })
 
-    this.#addMarkersToMap()
-    this.#fitMapToMarkers()
+
+    this.#addMarkersToMap();
+    this.#fitMapToMarkers();
+
   }
 
   #addMarkersToMap() {

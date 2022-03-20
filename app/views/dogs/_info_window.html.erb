@@ -1,2 +1,4 @@
-<h2><%= dog.name %></h2>
-<p><%= dog.address %></p>
+<div class="p-1 rounded text-start">
+  <h6><%= link_to dog.name, dog_path(dog)%></h6>
+  <p class = "mb-0"><%= dog.address %></p>
+</div>
