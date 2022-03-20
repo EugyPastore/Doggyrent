@@ -7,20 +7,18 @@
       <% else %>
         <img src="https://dogfuriendly.com/wp-content/uploads/2019/02/Default-Avatar.jpg" alt="dog photo">
       <% end %>
-      <div class= "d-flex justify-content-between align-items-center" style="width: 100%" >
+      <div class="d-flex justify-content-between align-items-center" style="width: 100%" >
         <div>
-          <div class= "d-flex align-items-baseline dog-booked-name">
-            <h6><%= link_to booking.dog.name, dog_path(booking.dog.id) %> booked!</h6>
-            <span class = "fw-normal badge ms-2"><%= booking.status.capitalize %></span>
-          </div>
-          <p>For: <strong><%= booking.date.strftime("%a %d %b %Y %H : %M") %></strong></p>
+          <span class="dog-booked-name"><%=link_to booking.dog.name, dog_path(booking.dog.id) %> booked!</span>
+          <p>For: <strong><%= booking.date.strftime("%a %d %b %Y at %H : %M") %></strong></p>
           <div class="booking-tooltip">
             <p>See message from <%= booking.user.first_name %></p>
             <span class="tooltiptext"><%= booking.message %></span>
           </div>
+          <span class="fw-normal badge"><%= booking.status.capitalize %></span>
         </div>
         <div>
-          <%= link_to "CANCEL", dog_booking_path(booking.dog, booking), class: "btn btn-red-small", method: :delete, data: {confirm: "Are you sure"} %>
+          <%= link_to "Cancel", dog_booking_path(booking.dog, booking), class: "btn btn-red-small", method: :delete, data: {confirm: "Are you sure"} %>
         </div>
       </div>
     </div>

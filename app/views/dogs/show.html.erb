@@ -1,8 +1,8 @@
-
 <div class="container">
   <div class="flex-container">
     <h1>Woof! My name is <%= @dog.name %></h1>
   </div>
+<!--PHOTO COLLAGE-->
   <div class="dog-show-grid">
     <% @dog.photos.each_with_index do |photo, index| %>
       <div class="photo-<%=index + 1%>">
@@ -16,14 +16,16 @@
   </div>
 
   <div class="row">
-    <div class="col-6">
+  <!--DESCRIPTION-->
+    <div class="col-sm-12 col-md-6">
       <div class="description-card">
         <h2 class="description-title">Description</h2>
         <p class="description-text"><%= @dog.description %></p>
         <p class="description-info"><em><%= @dog.name %> is a <%= @dog.breed %>. Learn more about his/her character <a href="https://dogtime.com/dog-breeds/<%=@dog.breed%>" target="_blank">here</a>.</em></p>
       </div>
     </div>
-    <div class="col-6">
+<!--AVAILABILITY-->
+    <div class="col-sm-12 col-md-6">
       <div class="calendar-card">
         <h2 class="calendar-title">Availability</h2>
         <% if user_signed_in? %>
@@ -39,6 +41,7 @@
       </div>
     </div>
   </div>
+<!--MAP-->
   <div class="map-container">
     <h2 class="Location-title">Where am I?</h2>
     <div style="width: 100%; height: 600px;"
@@ -47,6 +50,5 @@
       data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY']%>"
     >
     </div>
-
   </div>
 </div>
