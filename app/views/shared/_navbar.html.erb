@@ -1,16 +1,17 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon" id="navbar" data-controller="navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">
+    <a class="ms-5 navbar-brand" href="/">
       <img src="https://res.cloudinary.com/djxbpnlad/image/upload/v1645734765/doggyrent_vnancr.jpg" />
     </a>
+    <!-- hamburger dropdown menu -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="me-5 collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/dogs">See all dogs</a>
+            <a class="me-3 nav-link" href="/dogs">See all dogs</a>
           </li>
           <li class="nav-item dropdown">
             <% if user_signed_in? %>

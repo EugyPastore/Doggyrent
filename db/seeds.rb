@@ -7,13 +7,14 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Dog.destroy_all
 User.destroy_all
+Booking.destroy_all
 
-user1 = User.create!(email: "123@gmail.com", password: "123456", first_name: "Adam", last_name: "Jones")
-user2 = User.create!(email: "456@gmail.com", password: "123456", first_name: "Kate", last_name: "Smith")
+user1 = User.create!(email: "123@gmail.com", password: "123456", first_name: "Angelina", last_name: "Jolie")
+user2 = User.create!(email: "456@gmail.com", password: "123456", first_name: "Brad", last_name: "Pitt")
 
-Dog.create!(name: "Madonna", user: user1, breed: "Cocopoo", description: "healthy and hardy dog! Properly trained, it adores children and behaves well in public", address: "1077AD")
-Dog.create!(name: "Kokoo", user: user2, breed: "Pembroke Welsh Corgi", description: "May display aggression to other dogs. Very calm and playful.", address: "1076CD")
-Dog.create!(name: "Tayson", user: user1, breed: "Samoyed", description: "Is a loyal, loving dog. Very intelligent and enthusiastic.", address: "10563JF")
-Dog.create!(name: "Alfa", user: user1, breed: "Bulldog", description: "healthy and hardy dog! Properly trained, it adores children and behaves well in public", address: "10563JF")
-Dog.create!(name: "Rio", user: user2, breed: "Chihuahua", description: "healthy and hardy dog! Properly trained, it adores children and behaves well in public", address: "16463ML")
-Dog.create!(name: "Shankhai", user: user2, breed: "Dobermann", description: "healthy and hardy dog! Properly trained, it adores children and behaves well in public", address: "1793OP")
+Dog.create!(name: "Madona", user: user1, breed: "Cocopoo", description: "Healthy and hardy dog! Properly trained, it adores children and behaves well in public", address: "Wodanstraat 18, Amsterdam")
+Dog.create!(name: "Kokoo", user: user2, breed: "Pembroke Welsh Corgi", description: "May display aggression to other dogs. Very calm and playful.", address: "Hogewerf 62, Amsterdam")
+Dog.create!(name: "Tayson", user: user1, breed: "Samoyed", description: "Is a loyal, loving dog. Very intelligent and enthusiastic.", address: "Ottho Heldringstraat 25n, Amsterdam")
+Dog.create!(name: "Alfa", user: user1, breed: "Bulldog", description: "Excellent companion on rainy days!", address: "Soetendaal 72, Amsterdam")
+Dog.create!(name: "Rio", user: user2, breed: "Chihuahua", description: "Has lots of energy to play. Very well trained. Has soft character.", address: "Nicolaas Maesstraat 131, Amsterdam")
+Dog.create!(name: "Shankhai", user: user2, breed: "Dobermann", description: "Amazing friend for adult and children. It is gentle, well trained.", address: "Bierens de Haanstraat 45, Amsterdam")
