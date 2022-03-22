@@ -2,15 +2,12 @@
   <div class="row gx-0 gy-3">
     <div class="col-md-7 px-3 d-flex flex-column gap-3">
       <div class="card-top mt-4 mb-2">
-
           <% if user_signed_in? %>
             <h4>Hi <%= current_user.first_name %>!</h4>
             <% else %>
             <h4>Hi you!</h4>
           <% end %>
           <span>At this very moment, <%= pluralize @dogs.size, "dog" %> want<%= "s" if @dogs.size < 2 %> to go for a walk in the park. <strong>Let's go!</strong></span>
-
-
               <%= form_tag(dogs_path, method: :get) do %>
                 <div class="container-form mt-4">
                 <%= text_field_tag :query,
